@@ -7,12 +7,12 @@ const NavBar = () => {
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#projects">
           <button>Projects</button>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#contact-me">
           <button>Contact</button>
         </a>
       </li>
