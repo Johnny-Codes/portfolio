@@ -1,0 +1,23 @@
+const NavBar = () => {
+  return (
+    <ul>
+      <li>
+        <a href="#about-me">
+          <button>About Me</button>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <button>Projects</button>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <button>Contact</button>
+        </a>
+      </li>
+    </ul>
+  );
+};
+
+export default NavBar;
