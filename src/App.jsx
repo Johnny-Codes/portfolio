@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import NavBar from "./components/nav/NavBar";
+import ContactForm from "./components/contact/ContactForm";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         ></iframe>
       </p>
       <h2 id="contact-me">Contact Me!</h2>
+      <ContactForm />
     </>
   );
 }
