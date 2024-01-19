@@ -18,7 +18,17 @@ const ContactForm = () => {
 
   return (
     <div>
-      <form onSubmit={submitContactForm}>
+      <form
+        onSubmit={submitContactForm}
+        data-netlify="true"
+        method="POST"
+        name="Contact"
+      >
+        <p className="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
+        </p>
         <input
           type="text"
           id="name"
