@@ -8,12 +8,10 @@ const ContactForm = () => {
       ...prev,
       [e.target.id]: e.target.value,
     }));
-    console.log("form data", formData);
   };
 
   const submitContactForm = (e) => {
     e.preventDefault();
-    console.log("submitted");
   };
 
   return (
@@ -29,34 +27,44 @@ const ContactForm = () => {
             Don’t fill this out if you’re human: <input name="bot-field" />
           </label>
         </p>
-        <input
-          type="text"
-          id="name"
-          placeholder="Your Name"
-          required
-          onChange={updateContactForm}
-        ></input>
-        <textarea
-          id="message"
-          placeholder="Message"
-          rows="10"
-          cols="50"
-          required
-          onChange={updateContactForm}
-        ></textarea>
-        <input
-          type="email"
-          id="email"
-          placeholder="Your Email"
-          onChange={updateContactForm}
-        ></input>
-        <input
-          type="text"
-          id="phone"
-          placeholder="Your Contact Number"
-          onChange={updateContactForm}
-        ></input>
-        <button>Submit</button>
+        <p>
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+            onChange={updateContactForm}
+          ></input>
+        </p>
+        <p>
+          <textarea
+            id="message"
+            placeholder="Message"
+            rows="10"
+            cols="50"
+            required
+            onChange={updateContactForm}
+          ></textarea>
+        </p>
+        <p>
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            onChange={updateContactForm}
+          ></input>
+        </p>
+        <p>
+          <input
+            type="text"
+            id="phone"
+            placeholder="Your Contact Number"
+            onChange={updateContactForm}
+          ></input>
+        </p>
+        <p>
+          <button className="submit-button">Submit</button>
+        </p>
       </form>
     </div>
   );
