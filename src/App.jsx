@@ -1,6 +1,7 @@
 import "./App.css";
 import NavBar from "./components/nav/NavBar";
 import ContactForm from "./components/contact/ContactForm";
+import ProjectCard from "./components/projects/ProjectCard";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             Alabama or Houston, Texas
           </p>
           <p>Currently hold a Secret clearance</p>
-          <h2 id="projects">YouTube Highlights.</h2>
+          <h2 id="projects">Projects</h2>
           <h3>
             Visit my{" "}
             <a href="https://www.youtube.com/@johnny-codes" target="_blank">
@@ -26,28 +27,17 @@ function App() {
             </a>{" "}
             channel to see all content
           </h3>
-          <p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/LPdrhc8dlYA?si=XofSaELlqFKMujgT"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </p>
-          <p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/id8PYhitDwk?si=t7kpOf874neSVg23"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </p>
+          <ProjectCard
+            title="project one"
+            image="#"
+            description="description 1"
+          />
+          <ProjectCard
+            title="project two"
+            image="#"
+            description="description 2"
+          />
+
           <h2 id="contact-me">Contact Me!</h2>
           <ContactForm />
         </div>
