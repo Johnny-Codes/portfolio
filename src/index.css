@@ -17,6 +17,8 @@
 content-container {
   padding-left: 2em;
   padding-right: 2em;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
@@ -71,27 +73,40 @@ button:focus-visible {
 project-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto auto;
   grid-gap: 0px;
   padding: 1em;
-  margin-top: 5em;
+  margin-top: 2.5em;
 }
 
 .project-title {
   grid-column: 1;
   grid-row: 1;
+  font-size: 3em;
 }
 
 .project-description {
   grid-column: 1;
   grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+}
+
+.project-technologies {
+  grid-column: 1;
+  grid-row: 3;
+  font-size: 3em;
 }
 
 .project-hero {
   grid-column: 2;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
+  display: flex;
   border-radius: 50%;
   box-shadow: 10px 10px 5px #ff6480;
+  align-self: center;
+  justify-self: center;
 }
 
 contact-container {

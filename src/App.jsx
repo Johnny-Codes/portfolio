@@ -2,6 +2,7 @@ import "./App.css";
 import NavBar from "./components/nav/NavBar";
 import ContactForm from "./components/contact/ContactForm";
 import ProjectCard from "./components/projects/ProjectCard";
+import projects from "./components/projects/ProjectInfo";
 
 function App() {
   return (
@@ -27,16 +28,9 @@ function App() {
             channel to see all content
           </h3>
           <project-container>
-            <ProjectCard
-              title="project one"
-              image="https://placehold.co/600x400"
-              description="description 1"
-            />
-            <ProjectCard
-              title="project two"
-              image="https://placehold.co/600x400"
-              description="description 2"
-            />
+            {projects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
           </project-container>
           <h2 id="contact-me">Contact Me!</h2>
           <contact-container>
