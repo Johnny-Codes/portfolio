@@ -40,7 +40,7 @@ function App() {
               <p>Here are some of my social media profiles</p>
               <p>
                 <a
-                  href="https://www.linkedin.com/in/pauljohns/"
+                  href="https://www.linkedin.com/in/pmjohns/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -49,7 +49,7 @@ function App() {
               </p>
               <p>
                 <a
-                  href="https://www.github.com/johnny-codes"
+                  href="https://www.github.com/johnny-codes/"
                   target="_blank"
                   rel="noreferrer"
                 >
