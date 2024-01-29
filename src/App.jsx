@@ -1,8 +1,7 @@
 import "./App.css";
 import NavBar from "./components/nav/NavBar";
 import ContactForm from "./components/contact/ContactForm";
-import ProjectCard from "./components/projects/ProjectCard";
-import projects from "./components/projects/ProjectInfo";
+import ProjectComponent from "./components/projects/ProjectComponent";
 
 function App() {
   return (
@@ -22,15 +21,17 @@ function App() {
           <h2 id="projects">Projects</h2>
           <h3>
             Visit my{" "}
-            <a href="https://www.youtube.com/@johnny-codes" target="_blank">
+            <a
+              href="https://www.youtube.com/@johnny-codes"
+              target="_blank"
+              rel="noreferrer"
+            >
               YouTube
             </a>{" "}
             channel to see all content
           </h3>
           <project-container>
-            {projects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
+            <ProjectComponent />
           </project-container>
           <h2 id="contact-me">Contact Me!</h2>
           <contact-container>
