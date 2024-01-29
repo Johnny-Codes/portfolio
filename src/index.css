@@ -68,19 +68,6 @@ button:focus-visible {
   display: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 project-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -107,13 +94,59 @@ project-card {
   box-shadow: 10px 10px 5px #ff6480;
 }
 
+contact-container {
+  padding-left: 2em;
+  padding-right: 2em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2em;
+}
+
+contactform-container {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+input,
+textarea,
+.submit-button {
+  max-width: 100%;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin: 0 0.5em;
+  padding: 0.6em 1.2em;
+}
+.submit-button {
+  padding: 0.6em 1.2em;
+}
+
 @media only screen and (max-width: 1000px) {
-  project-card {
+  project-card,
+  contact-container {
     display: flex;
     flex-direction: column;
   }
 
   .project-title {
     text-align: center;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
   }
 }

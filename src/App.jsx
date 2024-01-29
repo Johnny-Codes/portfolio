@@ -39,7 +39,31 @@ function App() {
             />
           </project-container>
           <h2 id="contact-me">Contact Me!</h2>
-          <ContactForm />
+          <contact-container>
+            <ContactForm />
+            <div>
+              <h3>...or find me on Online</h3>
+              <p>Here are some of my social media profiles</p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/pauljohns/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.github.com/johnny-codes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+              </p>
+            </div>
+          </contact-container>
         </content-container>
       </div>
     </>

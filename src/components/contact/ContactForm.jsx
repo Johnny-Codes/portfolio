@@ -12,10 +12,11 @@ const ContactForm = () => {
 
   const submitContactForm = (e) => {
     e.preventDefault();
+    console.log(formData);
   };
 
   return (
-    <div>
+    <contactform-container>
       <form
         onSubmit={submitContactForm}
         data-netlify="true"
@@ -34,7 +35,7 @@ const ContactForm = () => {
             placeholder="Your Name"
             required
             onChange={updateContactForm}
-          ></input>
+          />
         </p>
         <p>
           <textarea
@@ -44,7 +45,7 @@ const ContactForm = () => {
             cols="50"
             required
             onChange={updateContactForm}
-          ></textarea>
+          />
         </p>
         <p>
           <input
@@ -52,7 +53,7 @@ const ContactForm = () => {
             id="email"
             placeholder="Your Email"
             onChange={updateContactForm}
-          ></input>
+          />
         </p>
         <p>
           <input
@@ -60,13 +61,13 @@ const ContactForm = () => {
             id="phone"
             placeholder="Your Contact Number"
             onChange={updateContactForm}
-          ></input>
+          />
         </p>
         <p>
-          <button className="submit-button">Submit</button>
+          <input type="submit" className="submit-button" />
         </p>
       </form>
-    </div>
+    </contactform-container>
   );
 };
 
