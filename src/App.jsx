@@ -8,8 +8,7 @@ function App() {
     <>
       <NavBar />
       <div className="container">
-        <div></div>
-        <div>
+        <content-container>
           <h1>Hello my name is Paul Johns</h1>
           <h3>Secret Clearance | Software Engineer | US Citizen</h3>
           <h2 id="about-me">I'm a full stack engineer</h2>
@@ -27,20 +26,21 @@ function App() {
             </a>{" "}
             channel to see all content
           </h3>
-          <ProjectCard
-            title="project one"
-            image="#"
-            description="description 1"
-          />
-          <ProjectCard
-            title="project two"
-            image="#"
-            description="description 2"
-          />
-
+          <project-container>
+            <ProjectCard
+              title="project one"
+              image="https://placehold.co/600x400"
+              description="description 1"
+            />
+            <ProjectCard
+              title="project two"
+              image="https://placehold.co/600x400"
+              description="description 2"
+            />
+          </project-container>
           <h2 id="contact-me">Contact Me!</h2>
           <ContactForm />
-        </div>
+        </content-container>
       </div>
     </>
   );
