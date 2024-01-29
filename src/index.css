@@ -19,6 +19,10 @@ content-container {
   padding-right: 2em;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -80,9 +84,10 @@ button:focus-visible {
 project-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-gap: 0.5em;
-  padding: 0.5em;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0px;
+  padding: 1em;
+  margin-top: 5em;
 }
 
 .project-title {
@@ -98,4 +103,17 @@ project-card {
 .project-hero {
   grid-column: 2;
   grid-row: 1 / span 2;
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px #ff6480;
+}
+
+@media only screen and (max-width: 1000px) {
+  project-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-title {
+    text-align: center;
+  }
 }
