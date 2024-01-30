@@ -8,8 +8,9 @@
   margin-top: 2em;
   margin-bottom: 4em;
   padding: 2em 2em;
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template-columns: 1fr 4fr 1fr;
 }
 
 a {

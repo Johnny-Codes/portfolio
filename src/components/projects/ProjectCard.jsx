@@ -1,8 +1,9 @@
 import { FaPython, FaReact } from "react-icons/fa";
-import { SiFastapi, SiPostgresql, SiVite } from "react-icons/si";
+import { SiFastapi, SiPostgresql, SiVite, SiDjango } from "react-icons/si";
 
 const techs = {
   python: <FaPython />,
+  django: <SiDjango />,
   fastapi: <SiFastapi />,
   postgresql: <SiPostgresql />,
   react: <FaReact />,
@@ -16,6 +17,7 @@ const ProjectCard = (project) => {
       <h3 className="project-title">{pr.title}</h3>
       <p className="project-description">
         {pr.youtube && <a href={pr.youtube}>YouTube</a>}
+        {pr.website && <a href={pr.website}>Visit Live</a>}
         {pr.description}
       </p>
       <p className="project-technologies">

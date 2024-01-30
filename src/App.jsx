@@ -2,22 +2,18 @@ import "./App.css";
 import NavBar from "./components/nav/NavBar";
 import ContactForm from "./components/contact/ContactForm";
 import ProjectComponent from "./components/projects/ProjectComponent";
+import AboutMe from "./components/about/AboutMe";
+
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 function App() {
   return (
     <>
       <NavBar />
       <div className="container">
+        <div></div>
         <content-container>
-          <h1>Hello my name is Paul Johns</h1>
-          <h3>Secret Clearance | Software Engineer | US Citizen</h3>
-          <h2 id="about-me">I'm a full stack engineer</h2>
-          <p>I like to make stuff.</p>
-          <p>
-            Currently looking for Software Engineering jobs in Huntsville,
-            Alabama or Houston, Texas
-          </p>
-          <p>Currently hold a Secret clearance</p>
+          <AboutMe />
           <h2 id="projects">Projects</h2>
           <h3>
             Visit my{" "}
@@ -44,7 +40,7 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  LinkedIn
+                  <SiLinkedin /> LinkedIn
                 </a>
               </p>
               <p>
@@ -53,12 +49,13 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  GitHub
+                  <SiGithub /> GitHub
                 </a>
               </p>
             </div>
           </contact-container>
         </content-container>
+        <div></div>
       </div>
     </>
   );
