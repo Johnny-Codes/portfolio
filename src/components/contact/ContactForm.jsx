@@ -64,7 +64,9 @@ const ContactForm = () => {
           />
         </p>
         <p>
-          <input type="submit" className="submit-button" />
+          <button type="submit" className="submit-button">
+            Contact Me
+          </button>
         </p>
       </form>
     </contactform-container>

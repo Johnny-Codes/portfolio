@@ -38,7 +38,6 @@ function App() {
             <ContactForm />
             <div>
               <h3>...or find me on Online</h3>
-              <p>Here are some of my social media profiles</p>
               <p>
                 <a
                   href="https://www.linkedin.com/in/pmjohns/"

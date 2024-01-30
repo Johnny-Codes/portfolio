@@ -12,7 +12,7 @@ const techs = {
 const ProjectCard = (project) => {
   const pr = project.project;
   return (
-    <project-card>
+    <project-card key={pr.id}>
       <h3 className="project-title">{pr.title}</h3>
       <p className="project-description">
         {pr.youtube && <a href={pr.youtube}>YouTube</a>}
