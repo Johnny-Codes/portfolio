@@ -13,25 +13,27 @@
 
 a {
   background-color: rgba(0, 0, 0, 0);
+  color: slategray;
 }
 
 li {
   list-style-type: none;
   display: inline;
+  margin: 0.5em;
 }
 
-.nav-bar > ul > li {
-  margin-left: 3em;
-}
-
-.nav-bar > ul > li > button {
+.nav-bar > ul > li > a {
   background-color: rgba(0, 0, 0, 0);
-  border: none;
+  border: 1px slategray solid;
+  padding: 0.6em 1em;
+  border-radius: 1em;
+  color: slategray;
 }
 
-.nav-bar > ul > li > button:hover {
+.nav-bar > ul > li > a:hover {
   background-color: rgba(0, 0, 0, 0);
-  border: none;
+  border: 1px slategray dashed;
+  color: white;
 }
 
 .nav-bar {

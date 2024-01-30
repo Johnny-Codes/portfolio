@@ -3,19 +3,13 @@ const NavBar = () => {
     <div className="nav-bar">
       <ul>
         <li>
-          <a href="#about-me">
-            <button>About Me</button>
-          </a>
+          <a href="#about-me">About Me</a>
         </li>
         <li>
-          <a href="#projects">
-            <button>Projects</button>
-          </a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#contact-me">
-            <button>Contact</button>
-          </a>
+          <a href="#contact-me">Contact</a>
         </li>
       </ul>
     </div>
