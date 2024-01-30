@@ -33,7 +33,7 @@ function App() {
           <contact-container>
             <ContactForm />
             <div>
-              <h3>...or find me on Online</h3>
+              <h3>...or find me on...</h3>
               <p>
                 <a
                   href="https://www.linkedin.com/in/pmjohns/"

@@ -1,5 +1,11 @@
 import { FaPython, FaReact } from "react-icons/fa";
-import { SiFastapi, SiPostgresql, SiVite, SiDjango } from "react-icons/si";
+import {
+  SiFastapi,
+  SiPostgresql,
+  SiVite,
+  SiDjango,
+  SiTailwindcss,
+} from "react-icons/si";
 
 const techs = {
   python: <FaPython />,
@@ -8,6 +14,7 @@ const techs = {
   postgresql: <SiPostgresql />,
   react: <FaReact />,
   vite: <SiVite />,
+  tailwindcss: <SiTailwindcss />,
 };
 
 const ProjectCard = (project) => {
