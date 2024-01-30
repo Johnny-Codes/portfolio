@@ -114,6 +114,7 @@ project-card {
   grid-gap: 0px;
   padding: 1em;
   margin-top: 2.5em;
+  background-color: #1a1a1a;
 }
 
 .project-title {
@@ -168,7 +169,7 @@ textarea {
   transition: border-color 0.25s;
   border-radius: 8px;
   border: 1px solid transparent;
-  margin: 0 0.5em;
+  /* margin: 0 0.5em; */
   padding: 0.6em 1.2em;
 }
 

@@ -37,16 +37,7 @@ const ContactForm = () => {
             onChange={updateContactForm}
           />
         </p>
-        <p>
-          <textarea
-            id="message"
-            placeholder="Message"
-            rows="10"
-            cols="50"
-            required
-            onChange={updateContactForm}
-          />
-        </p>
+
         <p>
           <input
             type="email"
@@ -60,6 +51,16 @@ const ContactForm = () => {
             type="text"
             id="phone"
             placeholder="Your Contact Number"
+            onChange={updateContactForm}
+          />
+        </p>
+        <p>
+          <textarea
+            id="message"
+            placeholder="Message"
+            rows="10"
+            cols="50"
+            required
             onChange={updateContactForm}
           />
         </p>
