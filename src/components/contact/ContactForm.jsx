@@ -10,10 +10,6 @@ const ContactForm = () => {
     }));
   };
 
-  const submitContactForm = (e) => {
-    e.preventDefault();
-    console.log(formData);
-  };
 
   return (
     <>
@@ -26,7 +22,6 @@ const ContactForm = () => {
           Contact Me!
         </h2>
         <form
-          onSubmit={submitContactForm}
           data-netlify="true"
           method="post"
           name="contact"
