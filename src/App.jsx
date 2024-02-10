@@ -3,7 +3,7 @@ import NavBar from "./components/nav/NavBar";
 import ContactForm from "./components/contact/ContactForm";
 import ProjectComponent from "./components/projects/ProjectComponent";
 import AboutMe from "./components/about/AboutMe";
-import Footer from "./components/footer/footer";
+import Footer from "./components/footer/Footer";
 
 
 
