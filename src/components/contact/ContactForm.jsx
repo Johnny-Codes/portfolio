@@ -22,9 +22,8 @@ const ContactForm = () => {
           Contact Me!
         </h2>
         <form
-          data-netlify="true"
-          method="post"
           name="contact"
+          method="post"
         >
           <input type="hidden" name="contact" value="contact" />
           <p>
