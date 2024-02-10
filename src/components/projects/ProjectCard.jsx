@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { FaPython, FaReact } from "react-icons/fa";
+import { FaPython, FaReact, FaYoutube } from "react-icons/fa";
 import {
   SiFastapi,
   SiPostgresql,
   SiVite,
   SiDjango,
   SiTailwindcss,
+  SiGithub,
 } from "react-icons/si";
 
 const techs = {
@@ -34,11 +35,12 @@ const ProjectCard = (project) => {
       <h3 className="text-3xl my-4 underline">{pr.title}</h3>
       <h2 className="py-4 indent-8 text-lg">
         {pr.youtube && (
-          <p className="py-4 indent-8 text-lg">
+          <p className="py-4  text-lg ">
             <a
               href={pr.youtube}
-              className="hover:cursor-pointer hover:underline hover:text-gray-400"
+              className="hover:cursor-pointer hover:underline hover:text-gray-400 flex items-center"
             >
+              <FaYoutube />
               YouTube
             </a>
           </p>
@@ -53,6 +55,17 @@ const ProjectCard = (project) => {
             </a>
           </p>
         )}
+        {pr.github && (
+  <p className="py-4 text-lg">
+    <a
+      href={pr.github}
+      className="hover:cursor-pointer hover:underline hover:text-gray-400 flex items-center"
+    >
+      <SiGithub /> GitHub
+    </a>
+  </p>
+)}
+
         <p className="py-4 indent-8 text-lg">{pr.description}</p>
       </h2>
       <p className="py-4 indent-8 text-2xl flex gap-2">
@@ -74,9 +87,10 @@ const ProjectCard = (project) => {
           );
         })}
       </p>
+      {pr.image &&
       <p className="py-4  flex justify-center">
         <img src={pr.image} alt={pr.alt} className="w-600 h-400 rounded-full" />
-      </p>
+      </p>}
     </project-card>
   );
 };
