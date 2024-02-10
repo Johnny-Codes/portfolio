@@ -3,61 +3,41 @@ import NavBar from "./components/nav/NavBar";
 import ContactForm from "./components/contact/ContactForm";
 import ProjectComponent from "./components/projects/ProjectComponent";
 import AboutMe from "./components/about/AboutMe";
+import Footer from "./components/footer/footer";
 
-import { SiGithub, SiLinkedin } from "react-icons/si";
+
 
 function App() {
   return (
-    <>
+    <div className="bg-gray-900 text-white">
       <NavBar />
-      <div className="container">
-        <div></div>
+      <div className="max-w-screen-lg mx-auto p-4">
         <content-container>
           <AboutMe />
-          <h2 id="projects">Projects</h2>
-          <h3>
-            Visit my{" "}
-            <a
-              href="https://www.youtube.com/@johnny-codes"
-              target="_blank"
-              rel="noreferrer"
-            >
-              YouTube
-            </a>{" "}
-            channel to see all content
-          </h3>
           <project-container>
+            <h2 id="projects" className="text-3xl text-center underline mt-4">
+              Projects
+            </h2>
             <ProjectComponent />
+            <p className="m-4 text-lg">
+              Visit my{" "}
+              <a
+                href="https://www.youtube.com/@johnny-codes"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:cursor-pointer hover:underline hover:text-gray-400"
+              >
+                YouTube
+              </a>{" "}
+              channel
+            </p>
           </project-container>
-          <h2 id="contact-me">Contact Me!</h2>
-          <contact-container>
+
             <ContactForm />
-            <div>
-              <h3>...or find me on...</h3>
-              <p>
-                <a
-                  href="https://www.linkedin.com/in/pmjohns/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <SiLinkedin /> LinkedIn
-                </a>
-              </p>
-              <p>
-                <a
-                  href="https://www.github.com/johnny-codes/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <SiGithub /> GitHub
-                </a>
-              </p>
-            </div>
-          </contact-container>
         </content-container>
-        <div></div>
       </div>
-    </>
+            <Footer />
+    </div>
   );
 }
 
