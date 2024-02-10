@@ -26,11 +26,6 @@ const ContactForm = () => {
           method="post"
           name="contact"
         >
-          <p className="hidden">
-            <label>
-              Don’t fill this out if you’re human: <input name="bot-field" />
-            </label>
-          </p>
           <input type="hidden" name="contact" value="contact" />
           <p>
             <input
