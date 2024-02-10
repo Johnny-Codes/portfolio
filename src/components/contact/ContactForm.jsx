@@ -1,16 +1,6 @@
-import { useState } from "react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
+
 const ContactForm = () => {
-  const [formData, setFormData] = useState({});
-
-  const updateContactForm = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.id]: e.target.value,
-    }));
-  };
-
-
   return (
     <>
      <div className="md:grid md:grid-cols-3 gap-4 sm:flex sm:flex-wrap">
@@ -29,11 +19,9 @@ const ContactForm = () => {
           <p>
             <input
               type="text"
-              id="name"
               name="name"
               placeholder="Your Name"
               required
-              onChange={updateContactForm}
               className="w-full px-4 py-2 rounded border border-gray-700 m-2 bg-slate-500 text-white "
             />
           </p>
@@ -41,33 +29,27 @@ const ContactForm = () => {
           <p>
             <input
               type="email"
-              id="email"
               name="email"
               placeholder="Your Email"
-              onChange={updateContactForm}
               className="w-full px-4 py-2 rounded border border-gray-700 m-2 bg-slate-500 text-white "
             />
           </p>
           <p>
             <input
               type="text"
-              id="phone"
               name="phone"
               placeholder="Your Contact Number"
-              onChange={updateContactForm}
               className="w-full px-4 py-2 rounded border border-gray-700 m-2 bg-slate-500 text-white "
             />
           </p>
           <p>
             <textarea
-              id="message"
               placeholder="Message"
               name="message"
               rows="10"
               required
-              onChange={updateContactForm}
               className="w-full px-4 py-2 rounded border border-gray-700 m-2 bg-slate-500 text-white "
-            />
+            ></textarea>
           </p>
           <p className="text-center">
             <button type="submit" className="px-4 py-2 border rounded-lg">
