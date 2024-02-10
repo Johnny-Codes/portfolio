@@ -32,7 +32,7 @@ const ProjectCard = (project) => {
   return (
     <project-card key={pr.id} className="flex flex-col items-center">
       <h3 className="text-3xl my-4 underline">{pr.title}</h3>
-      <p className="py-4 indent-8 text-lg">
+      <h2 className="py-4 indent-8 text-lg">
         {pr.youtube && (
           <p className="py-4 indent-8 text-lg">
             <a
@@ -54,7 +54,7 @@ const ProjectCard = (project) => {
           </p>
         )}
         <p className="py-4 indent-8 text-lg">{pr.description}</p>
-      </p>
+      </h2>
       <p className="py-4 indent-8 text-2xl flex gap-2">
         {pr.technologies.map((tech) => {
           return (
