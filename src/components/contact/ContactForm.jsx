@@ -28,16 +28,15 @@ const ContactForm = () => {
         <form
           onSubmit={submitContactForm}
           data-netlify="true"
-          method="POST"
-          name="Contact"
-          netlify-honeypot="bot-field"
-          netlify
+          method="post"
+          name="contact"
         >
           <p className="hidden">
             <label>
               Don’t fill this out if you’re human: <input name="bot-field" />
             </label>
           </p>
+          <input type="hidden" name="contact-form" value="contact" />
           <p>
             <input
               type="text"
