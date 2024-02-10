@@ -31,7 +31,7 @@ const ContactForm = () => {
               Don’t fill this out if you’re human: <input name="bot-field" />
             </label>
           </p>
-          <input type="hidden" name="contact-form" value="contact" />
+          <input type="hidden" name="contact" value="contact" />
           <p>
             <input
               type="text"
