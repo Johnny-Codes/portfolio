@@ -30,6 +30,7 @@ const ContactForm = () => {
             <input
               type="text"
               id="name"
+              name="name"
               placeholder="Your Name"
               required
               onChange={updateContactForm}
@@ -41,6 +42,7 @@ const ContactForm = () => {
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="Your Email"
               onChange={updateContactForm}
               className="w-full px-4 py-2 rounded border border-gray-700 m-2 bg-slate-500 text-white "
@@ -50,6 +52,7 @@ const ContactForm = () => {
             <input
               type="text"
               id="phone"
+              name="phone"
               placeholder="Your Contact Number"
               onChange={updateContactForm}
               className="w-full px-4 py-2 rounded border border-gray-700 m-2 bg-slate-500 text-white "
@@ -59,6 +62,7 @@ const ContactForm = () => {
             <textarea
               id="message"
               placeholder="Message"
+              name="message"
               rows="10"
               required
               onChange={updateContactForm}
