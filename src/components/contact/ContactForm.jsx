@@ -1,41 +1,42 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
   const handleSubmit = (event) => {
-    console.log(formData)
-    // Function to encode form data to x-www-form-urlencoded format
     const encode = (data) => {
       return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&');
+        .map(
+          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&");
     };
-    
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formData })
+      body: encode({ "form-name": "contact", ...formData }),
     })
-    .then(() => alert("Success!"))
-    .catch(error => alert(error));
+      .then(() => setShowModal(true))
+      .catch((error) => alert(error));
     event.preventDefault();
   };
-  
+
   return (
     <>
       <div className="md:grid md:grid-cols-3 gap-4 sm:flex sm:flex-wrap">
@@ -92,6 +93,28 @@ const ContactForm = () => {
               ></textarea>
             </p>
             <p className="text-center">
+              {showModal && (
+                <div
+                  className={`fixed inset-0 z-50 overflow-auto ${
+                    showModal ? "block" : "hidden"
+                  }`}
+                >
+                  <div className="flex items-center justify-center min-h-screen ">
+                    <div className="fixed inset-0 bg-gray-900 opacity-50"></div>
+                    <div className="relative bg-gray-500 rounded-lg p-8 max-w-md mx-auto">
+                      <span
+                        className="absolute top-0 right-0  m-2 text-white text-3xl cursor-pointer"
+                        onClick={() => setShowModal(false)}
+                      >
+                        &times;
+                      </span>
+                      <p className="text-xl p-4 mt-2">
+                        Thank you for contacting me!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
               <button type="submit" className="px-4 py-2 border rounded-lg">
                 Contact Me
               </button>
