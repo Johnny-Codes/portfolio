@@ -75,7 +75,7 @@ const ProjectCard = (project) => {
         })}
       </p>
       <p className="py-4  flex justify-center">
-        <img src={pr.image} className="w-600 h-400 rounded-full" />
+        <img src={pr.image} alt={pr.alt} className="w-600 h-400 rounded-full" />
       </p>
     </project-card>
   );

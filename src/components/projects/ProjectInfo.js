@@ -14,6 +14,7 @@ const projects = [
     ],
     youtube: "",
     image: "https://placehold.co/600x400",
+    alt: "coINventory logo",
     website: "",
   },
   {
@@ -24,6 +25,7 @@ const projects = [
     technologies: ["python", "fastapi", "postgresql"],
     youtube: "https://youtu.be/fXpeTJha9Nw",
     image: "https://placehold.co/600x400",
+    alt: "Dungeon Master Assistant logo",
     website: "",
   },
   {
@@ -41,6 +43,7 @@ const projects = [
     ],
     youtube: "",
     image: "https://placehold.co/600x400",
+    alt: "Intellicram logo",
     website: "https://main--intellicram.netlify.app/",
   },
 ];
