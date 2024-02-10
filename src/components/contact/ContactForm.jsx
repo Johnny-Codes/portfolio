@@ -12,6 +12,7 @@ const ContactForm = () => {
           Contact Me!
         </h2>
         <form
+        data-netlify="true"
           name="contact"
           method="post"
         >
