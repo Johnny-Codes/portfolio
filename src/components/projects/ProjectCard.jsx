@@ -68,7 +68,7 @@ const ProjectCard = (project) => {
 
         <p className="py-4 indent-8 text-lg">{pr.description}</p>
       </h2>
-      <p className="py-4 indent-8 text-2xl flex gap-2">
+      <p className="py-4 text-2xl flex gap-2">
         {pr.technologies.map((tech) => {
           return (
             <span
@@ -79,7 +79,7 @@ const ProjectCard = (project) => {
             >
               {techs[tech]}
               {tooltip === tech && (
-                <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 px-2 py-1 text-sm rounded-md">
+                <span className="absolute bg-gray-500 bottom-full left-1/2 transform -translate-x-1/2 px-2 py-1 text-sm rounded-md">
                   {tech}
                 </span>
               )}
