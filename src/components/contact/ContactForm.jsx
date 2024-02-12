@@ -144,7 +144,7 @@ const ContactForm = () => {
               <SiGithub /> GitHub
             </a>
           </p>
-          <p className="font-bold p-2 text-3xl">
+          <p className="text-xl font-bold p-2">
             <a
               href="https://www.youtube.com/@johnny-codes"
               target="_blank"
