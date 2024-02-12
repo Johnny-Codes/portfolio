@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
+import { FaYoutube } from "react-icons/fa";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -141,6 +142,16 @@ const ContactForm = () => {
               className="inline-flex items-center gap-2"
             >
               <SiGithub /> GitHub
+            </a>
+          </p>
+          <p className="text-xl font-bold">
+            <a
+              href="https://www.youtube.com/@johnny-codes"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2"
+            >
+              <FaYoutube /> YouTube
             </a>
           </p>
         </div>
