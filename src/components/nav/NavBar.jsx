@@ -1,6 +1,8 @@
+import {useState, useEffect} from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 
 const NavBar = () => {
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
   };
@@ -8,6 +10,24 @@ const NavBar = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsNavbarVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+    const navbar = document.getElementById('navbar-default');
+    if (navbar) {
+      observer.observe(navbar);
+    }
+    return () => {
+      if (navbar) {
+        observer.unobserve(navbar);
+      }
+    };
+  }, []);
 
   return (
     <>
@@ -38,12 +58,14 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-      <button
-        onClick={scrollToTop}
-        style={{ position: "fixed", bottom: "20px", right: "20px" }}
-      >
-        <FaArrowUp />
-      </button>
+      {!isNavbarVisible && (
+        <button
+          onClick={scrollToTop}
+          className="animate-fade-in text-3xl fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600"
+        >
+          <FaArrowUp />
+        </button>
+      )}
     </>
   );
 };
