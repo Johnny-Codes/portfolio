@@ -124,7 +124,7 @@ const ContactForm = () => {
         </div>
         <div className="col-span-1 text-center">
           <p className="text-xl mb-2">...or find me on...</p>
-          <p className="text-xl font-bold mb-2">
+          <p className="text-xl font-bold mb-2 p-2">
             <a
               href="https://www.linkedin.com/in/pmjohns/"
               target="_blank"
@@ -134,7 +134,7 @@ const ContactForm = () => {
               <SiLinkedin /> LinkedIn
             </a>
           </p>
-          <p className="text-xl font-bold">
+          <p className="text-xl font-bold p-2">
             <a
               href="https://www.github.com/johnny-codes/"
               target="_blank"
@@ -144,7 +144,7 @@ const ContactForm = () => {
               <SiGithub /> GitHub
             </a>
           </p>
-          <p className="text-xl font-bold">
+          <p className="font-bold p-2 text-3xl">
             <a
               href="https://www.youtube.com/@johnny-codes"
               target="_blank"
