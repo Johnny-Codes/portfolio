@@ -124,7 +124,7 @@ const ContactForm = () => {
         </div>
         <div className="col-span-1 text-center">
           <p className="text-xl mb-2">...or find me on...</p>
-          <p className="text-xl font-bold mb-2 p-2">
+          <p className="text-xl font-bold p-2">
             <a
               href="https://www.linkedin.com/in/pmjohns/"
               target="_blank"
