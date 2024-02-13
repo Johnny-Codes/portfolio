@@ -44,7 +44,7 @@ const projects = [
       "tailwindcss",
     ],
     youtube: "",
-    image: "",
+    image: "https://main--intellicram.netlify.app/assets/HomePageText-19f5a868.png",
     alt: "IntelliCram logo",
     website: "https://main--Intellicram.netlify.app/",
     github: "",

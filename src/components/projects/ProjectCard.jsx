@@ -33,6 +33,25 @@ const ProjectCard = (project) => {
   return (
     <project-card key={pr.id} className="flex flex-col items-center">
       <h3 className="text-3xl my-4 underline">{pr.title}</h3>
+      <p className="py-4 text-2xl flex gap-2">
+        {pr.technologies.map((tech) => {
+          return (
+            <span
+              key={tech}
+              className="relative"
+              onMouseEnter={() => handleMouseEnter(tech)}
+              onMouseLeave={handleMouseLeave}
+            >
+              {techs[tech]}
+              {tooltip === tech && (
+                <span className="absolute bg-gray-500 bottom-full left-1/2 transform -translate-x-1/2 px-2 py-1 text-sm rounded-md">
+                  {tech}
+                </span>
+              )}
+            </span>
+          );
+        })}
+      </p>
       <h2 className="py-4 indent-8 text-lg">
         {pr.youtube && (
           <p className="py-4  text-lg ">
@@ -66,31 +85,15 @@ const ProjectCard = (project) => {
   </p>
 )}
 
-        <p className="py-4 indent-8 text-lg">{pr.description}</p>
+        
       </h2>
-      <p className="py-4 text-2xl flex gap-2">
-        {pr.technologies.map((tech) => {
-          return (
-            <span
-              key={tech}
-              className="relative"
-              onMouseEnter={() => handleMouseEnter(tech)}
-              onMouseLeave={handleMouseLeave}
-            >
-              {techs[tech]}
-              {tooltip === tech && (
-                <span className="absolute bg-gray-500 bottom-full left-1/2 transform -translate-x-1/2 px-2 py-1 text-sm rounded-md">
-                  {tech}
-                </span>
-              )}
-            </span>
-          );
-        })}
-      </p>
+      
       {pr.image &&
+      <a href={pr.website} rel="noreferrer" target="_blank">
       <p className="py-4  flex justify-center">
         <img src={pr.image} alt={pr.alt} className="w-600 h-400 rounded-full" />
-      </p>}
+      </p></a>}
+      <p className="py-4 indent-8 text-lg">{pr.description}</p>
     </project-card>
   );
 };
