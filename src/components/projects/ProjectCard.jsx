@@ -75,24 +75,28 @@ const ProjectCard = (project) => {
           </p>
         )}
         {pr.github && (
-  <p className="py-4 text-lg">
-    <a
-      href={pr.github}
-      className="hover:cursor-pointer hover:underline hover:text-gray-400 flex items-center"
-    >
-      <SiGithub /> GitHub
-    </a>
-  </p>
-)}
-
-        
+          <p className="py-4 text-lg">
+            <a
+              href={pr.github}
+              className="hover:cursor-pointer hover:underline hover:text-gray-400 flex items-center"
+            >
+              <SiGithub /> GitHub
+            </a>
+          </p>
+        )}
       </h2>
-      
-      {pr.image &&
-      <a href={pr.website} rel="noreferrer" target="_blank">
-      <p className="py-4  flex justify-center">
-        <img src={pr.image} alt={pr.alt} className="w-600 h-400 rounded-full" />
-      </p></a>}
+
+      {pr.image && (
+        <a href={pr.website} rel="noreferrer" target="_blank">
+          <p className="py-4  flex justify-center">
+            <img
+              src={pr.image}
+              alt={pr.alt}
+              className="w-600 h-400 rounded-full"
+            />
+          </p>
+        </a>
+      )}
       <p className="py-4 indent-8 text-lg">{pr.description}</p>
     </project-card>
   );
