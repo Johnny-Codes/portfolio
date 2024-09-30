@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaPython, FaReact, FaYoutube } from "react-icons/fa";
+import { FaRaspberryPi } from "react-icons/fa6";
 import {
   SiFastapi,
   SiPostgresql,
@@ -17,6 +18,8 @@ const techs = {
   react: <FaReact />,
   vite: <SiVite />,
   tailwindcss: <SiTailwindcss />,
+  ccpp: "C/C++",
+  raspberrypi: <FaRaspberryPi />,
 };
 
 const ProjectCard = (project) => {

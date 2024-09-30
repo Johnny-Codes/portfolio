@@ -1,5 +1,13 @@
 const projects = [
   {
+    id: 0,
+    title: "IoT Digital Twin",
+    description: "Creating a private network to support IoT devices utilizing microcontrollers like the ESP32 and Raspberry Pi to create a digital twin of a manufacturing lab.",
+    technologies: [
+      "python",
+    ]
+  },
+  {
     id: 1,
     title: "coINventory",
     description:
