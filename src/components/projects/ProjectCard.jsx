@@ -8,13 +8,9 @@ import {
   SiDjango,
   SiTailwindcss,
   SiGithub,
-  SiHtmx,
-  FaCcStripe,
-  FaDocker,
-  FaDigitalOcean,
   SiAlpinedotjs,
 } from "react-icons/si";
-
+import { FaDigitalOcean, FaDocker, FaCcStripe } from "react-icons/fa";
 const techs = {
   python: <FaPython />,
   django: <SiDjango />,
@@ -25,7 +21,7 @@ const techs = {
   tailwindcss: <SiTailwindcss />,
   ccpp: "C/C++",
   raspberrypi: <FaRaspberryPi />,
-  htmx: <SiHtmx />,
+  htmx: "HTMX",
   stripe: <FaCcStripe />,
   docker: <FaDocker />,
   digitalocean: <FaDigitalOcean />,
