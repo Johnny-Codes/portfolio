@@ -12,8 +12,7 @@ const projects = [
       "docker",
     ],
     website: "https://www.whatsupmarshallcounty.com",
-    image: "https://media.licdn.com/dms/image/v2/D560BAQGbQR4lopH5lw/company-logo_200_200/B56Zp0DvRdI4AI-/0/1762883729541?e=1764806400&v=beta&t=baUUvoPebz6AEq9WEi--tqRgNI1gopVXpxI1gYs9KgY",
-    alt: "What's Up Marshall County Logo."
+    image: "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-1/581040361_122103697971109256_4137147196868539981_n.jpg"
   },
   {
     id: 1,
