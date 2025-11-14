@@ -7,9 +7,10 @@ const projects = [
       "python",
       "django",
       "htmx",
-      "alpine.js",
+      "alpinejs",
       "digitalocean",
       "docker",
+      "postgresql"
     ],
     website: "https://www.whatsupmarshallcounty.com",
     image: "https://scontent-atl3-3.xx.fbcdn.net/v/t39.30808-1/581040361_122103697971109256_4137147196868539981_n.jpg"
@@ -33,7 +34,8 @@ const projects = [
       "postgresql",
       "vite",
       "react",
-      "stripe, tailwindcss",
+      "stripe",
+      "tailwindcss",
     ],
     youtube: "",
     image: "",

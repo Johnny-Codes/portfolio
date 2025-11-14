@@ -8,6 +8,11 @@ import {
   SiDjango,
   SiTailwindcss,
   SiGithub,
+  SiHtmx,
+  FaCcStripe,
+  FaDocker,
+  FaDigitalOcean,
+  SiAlpinedotjs,
 } from "react-icons/si";
 
 const techs = {
@@ -20,6 +25,11 @@ const techs = {
   tailwindcss: <SiTailwindcss />,
   ccpp: "C/C++",
   raspberrypi: <FaRaspberryPi />,
+  htmx: <SiHtmx />,
+  stripe: <FaCcStripe />,
+  docker: <FaDocker />,
+  digitalocean: <FaDigitalOcean />,
+  alpinejs: <SiAlpinedotjs />,
 };
 
 const ProjectCard = (project) => {
