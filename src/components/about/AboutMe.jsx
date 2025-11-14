@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <>
-      <h1 className="text-3xl text-center py-4">Hello &#128075; My name is Paul Johns</h1>
+      <h1 className="text-3xl text-center py-4">Hello My name is Paul Johns</h1>
       <p className="py-4 indent-8 text-lg">
         I'm a dynamic software developer bringing a unique blend of military
         experience and entrepreneurial spirit to the tech world. After 8 years
