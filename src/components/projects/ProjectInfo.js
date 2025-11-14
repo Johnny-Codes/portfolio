@@ -14,7 +14,7 @@ const projects = [
     website: "https://www.whatsupmarshallcounty.com",
     image: "https://media.licdn.com/dms/image/v2/D560BAQGbQR4lopH5lw/company-logo_200_200/B56Zp0DvRdI4AI-/0/1762883729541?e=1764806400&v=beta&t=baUUvoPebz6AEq9WEi--tqRgNI1gopVXpxI1gYs9KgY",
     alt: "What's Up Marshall County Logo."
-  }
+  },
   {
     id: 1,
     title: "IoT Digital Twin",
