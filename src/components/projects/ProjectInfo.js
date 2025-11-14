@@ -2,7 +2,7 @@ const projects = [
   {
     id: 0,
     title: "What's Up Marshall County",
-    description: "A website to connect the Marshall County, Alabama community and surrounding areas with small & locally owned businesses."
+    description: "A website to connect the Marshall County, Alabama community and surrounding areas with small & locally owned businesses.",
     technologies: [
       "python",
       "django",
