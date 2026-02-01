@@ -2,7 +2,7 @@ const projects = [
   {
     id: 0,
     title: "What's Up Marshall County",
-    description: "A website to connect the Marshall County, Alabama community and surrounding areas with small & locally owned businesses.",
+    description: "A comprehensive business and event directory platform connecting the Marshall County, Alabama community with local businesses in Arab, Guntersville, Albertville, and surrounding areas. Features include business listings, event management, and community engagement tools.",
     technologies: [
       "python",
       "django",
@@ -17,17 +17,17 @@ const projects = [
   },
   {
     id: 1,
-    title: "IoT Digital Twin",
-    description: "Creating a private network to support IoT devices utilizing microcontrollers like the ESP32 and Raspberry Pi to create a digital twin of a manufacturing lab.",
+    title: "IoT Digital Twin & Industrial Automation",
+    description: "Advanced IoT network implementation utilizing ESP32 microcontrollers and Raspberry Pi devices to create a digital twin of manufacturing operations. Demonstrates expertise in hardware integration, data collection, and real-time monitoring systems applicable to business automation and Industry 4.0 solutions.",
     technologies: [
       "python",
     ]
   },
   {
     id: 2,
-    title: "coINventory",
+    title: "coINventory - Business Management System",
     description:
-      "coINventory is a full stack application that allows a user to track their coin inventory (coINventory, get it?). Users can also create and send invoices utilizing the Stripe payment gateway.",
+      "Full-stack inventory management and invoicing platform with integrated Stripe payment processing. Features include real-time inventory tracking, automated invoicing, and secure payment gateway integration. Perfect example of custom business automation solutions tailored to specific industry needs.",
     technologies: [
       "python",
       "django",
@@ -43,37 +43,37 @@ const projects = [
     website: "",
     github: "",
   },
-  {
-    id: 3,
-    title: "Dungeon Master Assistant",
-    description:
-      "This project is a full stack application that allows a Dungeon Master to create and manage a Dungeons and Dragons campaign. The application allows the user to create a campaign, add players to the campaign, and create encounters for the campaign. The application also allows the user to create a character, add the character to a campaign, and add the character to an encounter. The application also allows the user to create a monster, add the monster to an encounter, and add the monster to a campaign.",
-    technologies: ["python", "fastapi", "postgresql"],
-    youtube: "https://youtu.be/fXpeTJha9Nw",
-    image: "",
-    alt: "Dungeon Master Assistant logo",
-    website: "",
-    github: "https://github.com/Johnny-Codes/dnd-dm-assistant",
-  },
-  {
-    id: 4,
-    title: "IntelliCram",
-    description:
-      "Welcome to IntelliCram where learning becomes an exhilarating journey and intelligence meets innovation. Unlock your academic potential with our cutting-edge study and flashcard web app that redefines the way you absorb knowledge. Seamlessly blend personalized study materials curated by AI with our extensive content database. Experience the power of artificial intelligence, tailored to your unique learning style, as IntelliCram transforms mundane study sessions into dynamic, engaging experiences. Beyond rote memorization, IntelliCram fosters true understanding through immersive quizzes, guiding you towards mastery of your subjects. Elevate your learning experience and join us in shaping a future where intelligence and education converge seamlessly.",
-    technologies: [
-      "python",
-      "fastapi",
-      "react",
-      "vite",
-      "postgresql",
-      "tailwindcss",
-    ],
-    youtube: "",
-    image: "https://main--intellicram.netlify.app/assets/HomePageText-19f5a868.png",
-    alt: "IntelliCram logo",
-    website: "https://main--Intellicram.netlify.app/",
-    github: "",
-  },
+  // {
+  //   id: 3,
+  //   title: "AI-Powered Campaign Management System",
+  //   description:
+  //     "Sophisticated content management platform for collaborative storytelling and campaign coordination. Demonstrates complex database relationships, user role management, and multi-entity data handling. Showcases ability to build comprehensive admin systems with RESTful API architecture applicable to business content management needs.",
+  //   technologies: ["python", "fastapi", "postgresql"],
+  //   youtube: "https://youtu.be/fXpeTJha9Nw",
+  //   image: "",
+  //   alt: "Campaign Management System",
+  //   website: "",
+  //   github: "https://github.com/Johnny-Codes/dnd-dm-assistant",
+  // },
+  // {
+  //   id: 4,
+  //   title: "IntelliCram - AI-Powered Learning Platform",
+  //   description:
+  //     "AI-integrated study platform showcasing advanced implementation of GPT-based content generation and personalized learning algorithms. Features intelligent flashcard generation, adaptive quizzing, and AI-curated study materials. Demonstrates expertise in OpenAI API integration and building AI-powered features that deliver real value to users.",
+  //   technologies: [
+  //     "python",
+  //     "fastapi",
+  //     "react",
+  //     "vite",
+  //     "postgresql",
+  //     "tailwindcss",
+  //   ],
+  //   youtube: "",
+  //   image: "https://main--intellicram.netlify.app/assets/HomePageText-19f5a868.png",
+  //   alt: "IntelliCram AI Learning Platform",
+  //   website: "https://main--Intellicram.netlify.app/",
+  //   github: "",
+  // },
 ];
 
 export default projects;

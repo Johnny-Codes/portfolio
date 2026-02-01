@@ -16,8 +16,11 @@ function App() {
           <AboutMe />
           <project-container>
             <h2 id="projects" className="text-3xl text-center underline mt-4">
-              Projects
+              Portfolio & Client Work
             </h2>
+            <p className="text-center text-gray-300 mt-2 mb-4 text-lg">
+              Website Design, AI Automation & Development Projects for Alabama Businesses
+            </p>
             <ProjectComponent />
             <p className="m-4 text-lg">
               Visit my{" "}

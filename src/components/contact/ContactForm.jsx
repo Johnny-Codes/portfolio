@@ -46,8 +46,11 @@ const ContactForm = () => {
             id="contact-me"
             className="text-3xl text-center text-shadow-md shadow-white"
           >
-            Contact Me!
+            Get a Free Consultation
           </h2>
+          <p className="text-center text-lg text-gray-300 mt-2 mb-4">
+            Serving Arab, Huntsville, Birmingham & North Alabama
+          </p>
           <form name="contact" method="post" onSubmit={handleSubmit}>
             <input type="hidden" name="contact" value="contact" />
             <p>

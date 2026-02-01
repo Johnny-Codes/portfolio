@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+Sitemap: https://pauljohns.dev/sitemap.xml
+
+# Optimized for local search in Arab, Huntsville, and Birmingham, Alabama
+# Freelance website design and AI automation services
 Disallow: /api
