@@ -31,10 +31,10 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="border-gray-200">
+      <nav className="border-professional-midgrey">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="w-full md:block md:w-auto" id="navbar-default">
-            <ul className="text-white font-medium flex flex-col p-4 md:p-0 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-gray-900 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="text-professional-offwhite font-medium flex flex-col p-4 md:p-0 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 md:bg-black bg-professional-darkgrey border-professional-midgrey">
               <li>
                 <button className="py-2 px-4" onClick={() => scrollToSection('about-me')}>About Me</button>
               </li>
@@ -54,7 +54,7 @@ const NavBar = () => {
       {!isNavbarVisible && (
         <button
           onClick={scrollToTop}
-          className="animate-fade-in text-3xl fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600"
+          className="animate-fade-in text-3xl fixed bottom-4 right-4 bg-professional-grey text-professional-offwhite p-2 rounded-full hover:bg-professional-yellow hover:text-black border border-professional-yellow transition-colors"
         >
           <FaArrowUp />
         </button>

@@ -53,7 +53,7 @@ const ProjectCard = (project) => {
             >
               {techs[tech]}
               {tooltip === tech && (
-                <span className="absolute bg-gray-500 bottom-full left-1/2 transform -translate-x-1/2 px-2 py-1 text-sm rounded-md">
+                <span className="absolute bg-professional-grey bottom-full left-1/2 transform -translate-x-1/2 px-2 py-1 text-sm rounded-md border border-professional-midgrey">
                   {tech}
                 </span>
               )}
@@ -66,7 +66,7 @@ const ProjectCard = (project) => {
           <p className="py-4  text-lg ">
             <a
               href={pr.youtube}
-              className="hover:cursor-pointer hover:underline hover:text-gray-400 flex items-center"
+              className="hover:cursor-pointer hover:underline hover:text-professional-silver flex items-center"
             >
               <FaYoutube />
               YouTube
@@ -77,7 +77,7 @@ const ProjectCard = (project) => {
           <p className="py-4 indent-8 text-lg">
             <a
               href={pr.website}
-              className="hover:cursor-pointer hover:underline hover:text-gray-400"
+              className="hover:cursor-pointer hover:underline hover:text-professional-silver"
             >
               Visit Live
             </a>
@@ -87,7 +87,7 @@ const ProjectCard = (project) => {
           <p className="py-4 text-lg">
             <a
               href={pr.github}
-              className="hover:cursor-pointer hover:underline hover:text-gray-400 flex items-center"
+              className="hover:cursor-pointer hover:underline hover:text-professional-silver flex items-center"
             >
               <SiGithub /> GitHub
             </a>
@@ -97,11 +97,11 @@ const ProjectCard = (project) => {
 
       {pr.image && (
         <a href={pr.website} rel="noreferrer" target="_blank">
-          <p className="py-4  flex justify-center">
+          <p className="py-4 flex justify-center">
             <img
               src={pr.image}
               alt={pr.alt}
-              className="w-600 h-400 rounded-full"
+              className="max-w-md w-full h-auto rounded-lg shadow-lg hover:shadow-professional-yellow/20 transition-shadow border border-professional-midgrey"
             />
           </p>
         </a>

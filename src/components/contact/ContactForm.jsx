@@ -44,11 +44,11 @@ const ContactForm = () => {
         <div className="w-full col-span-2">
           <h2
             id="contact-me"
-            className="text-3xl text-center text-shadow-md shadow-white"
+            className="text-3xl text-center border-b-4 border-professional-yellow pb-4 mb-4"
           >
             Get a Free Consultation
           </h2>
-          <p className="text-center text-lg text-gray-300 mt-2 mb-4">
+          <p className="text-center text-lg text-professional-silver mt-2 mb-4">
             Serving Arab, Huntsville, Birmingham & North Alabama
           </p>
           <form name="contact" method="post" onSubmit={handleSubmit}>
@@ -61,7 +61,7 @@ const ContactForm = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 rounded border border-gray-700 m-2 bg-slate-500 text-white "
+                className="w-full px-4 py-2 rounded border border-professional-midgrey m-2 bg-professional-grey text-white focus:border-professional-lightgrey focus:outline-none"
               />
             </p>
 
@@ -72,7 +72,7 @@ const ContactForm = () => {
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded border border-gray-700 m-2 bg-slate-500 text-white "
+                className="w-full px-4 py-2 rounded border border-professional-midgrey m-2 bg-professional-grey text-professional-offwhite focus:border-professional-lightgrey focus:outline-none placeholder:text-professional-silver"
               />
             </p>
             <p>
@@ -82,7 +82,7 @@ const ContactForm = () => {
                 placeholder="Your Contact Number"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded border border-gray-700 m-2 bg-slate-500 text-white "
+                className="w-full px-4 py-2 rounded border border-professional-midgrey m-2 bg-professional-grey text-professional-offwhite focus:border-professional-lightgrey focus:outline-none placeholder:text-professional-silver"
               />
             </p>
             <p>
@@ -93,7 +93,7 @@ const ContactForm = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 rounded border border-gray-700 m-2 bg-slate-500 text-white "
+                className="w-full px-4 py-2 rounded border border-professional-midgrey m-2 bg-professional-grey text-professional-offwhite focus:border-professional-lightgrey focus:outline-none placeholder:text-professional-silver"
               ></textarea>
             </p>
             <p className="text-center">
@@ -104,8 +104,8 @@ const ContactForm = () => {
                   }`}
                 >
                   <div className="flex items-center justify-center min-h-screen ">
-                    <div className="fixed inset-0 bg-gray-900 opacity-50"></div>
-                    <div className="relative bg-gray-500 rounded-lg p-8 max-w-md mx-auto">
+                    <div className="fixed inset-0 bg-black opacity-75"></div>
+                    <div className="relative bg-professional-grey rounded-lg p-8 max-w-md mx-auto border border-professional-midgrey">
                       <span
                         className="absolute top-0 right-0  m-2 text-white text-3xl cursor-pointer"
                         onClick={() => setShowModal(false)}
