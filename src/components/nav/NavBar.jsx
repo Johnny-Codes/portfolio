@@ -44,9 +44,6 @@ const NavBar = () => {
               <li>
                 <button className="py-2 px-4" onClick={() => scrollToSection('contact-me')}>Contact</button>
               </li>
-              <li>
-                <button className="py-2 px-4" disabled>Musings - Coming Soon</button>
-              </li>
             </ul>
           </div>
         </div>
