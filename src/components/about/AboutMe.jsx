@@ -19,7 +19,7 @@ const AboutMe = () => {
           {/* Column 1: Website Design & Development */}
           <div className="bg-black/40 rounded-lg p-6 border-l-4 border-professional-yellow hover:border-professional-darkyellow transition-all hover:shadow-lg hover:shadow-professional-yellow/10">
             <div className="flex items-center gap-3 mb-4">
-              <h3 className="text-2xl font-bold text-black">Website Design & Development</h3>
+              <h3 className="text-2xl font-bold text-professional-yellow">Website Design & Development</h3>
             </div>
             <ul className="space-y-3 text-base">
               <li className="flex items-start gap-3 group">
@@ -48,7 +48,7 @@ const AboutMe = () => {
           {/* Column 2: Business AI Integration */}
           <div className="bg-black/40 rounded-lg p-6 border-l-4 border-professional-yellow hover:border-professional-darkyellow transition-all hover:shadow-lg hover:shadow-professional-yellow/10">
             <div className="flex items-center gap-3 mb-4">
-              <h3 className="text-2xl font-bold text-black">AI Integration for Business Workflows</h3>
+              <h3 className="text-2xl font-bold text-professional-yellow">AI Integration for Business Workflows</h3>
             </div>
             <ul className="space-y-3 text-base">
               <li className="flex items-start gap-3 group">
