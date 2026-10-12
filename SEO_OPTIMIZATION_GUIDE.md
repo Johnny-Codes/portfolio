@@ -39,6 +39,8 @@
 - ✅ Created sitemap.xml for search engine crawling
 - ✅ Updated robots.txt with sitemap reference
 - ✅ Created structured data (Schema.org) for local business SEO
+- ✅ Added canonical, Open Graph, and Twitter metadata to the document head
+- ✅ Limited sitemap.xml to the canonical homepage URL; section fragments are not separate pages
 
 ---
 
@@ -46,23 +48,18 @@
 
 ### Immediate Actions (Do These Now)
 
-1. **Update Structured Data** ([structuredData.js](src/structuredData.js))
-   - Add your phone number
-   - Add your email
-   - Add your social media URLs (GitHub, LinkedIn)
-   - Update the website URL with your actual domain
+1. **Verify Published Business Details** ([structuredData.js](src/structuredData.js))
+   - Phone, email, website, and LinkedIn are already present; confirm they are current and intended for publication.
+   - Only add a street address if you have a public business location. Do not use a city name as a street address.
 
-2. **Update Sitemap** ([public/sitemap.xml](public/sitemap.xml))
-   - Replace "https://yourwebsite.com/" with your actual domain
-
-3. **Google My Business**
+2. **Google Business Profile**
    - Create/claim Google Business Profile
    - Category: "Website Designer" and "Software Company"
    - Service Areas: Arab, Huntsville, Birmingham, Marshall County
    - Add photos of your work
    - Post regular updates about projects
 
-4. **Bing Places for Business**
+3. **Bing Places for Business**
    - Create listing (often overlooked but valuable)
    - Same information as Google
 
@@ -144,25 +141,27 @@
 ### Keyword Strategy Focus
 
 **Primary Keywords:**
-- freelance website design Arab AL
-- web developer Huntsville Alabama
-- AI automation Birmingham
-- agentic AI solutions Alabama
-- custom website development North Alabama
+- business AI integration Alabama
+- AI workflow automation North Alabama
+- AI integration for small businesses Huntsville
+- business process automation Arab AL
+- custom AI assistants Alabama
 
 **Secondary Keywords:**
-- business automation Arab AL
-- e-commerce development Huntsville
+- AI document processing for businesses
+- AI customer support integration Huntsville
+- connect AI to business systems Alabama
 - AI integration Marshall County
+- web developer Huntsville Alabama
 - website redesign Birmingham
 - React developer Alabama
 - Python developer Huntsville
 
 **Long-tail Keywords:**
-- affordable website design for small businesses in Arab AL
-- AI chatbot development for Alabama businesses
-- local web developer near Huntsville
-- custom business automation solutions Marshall County
+- automate repetitive office tasks with AI Alabama
+- AI assistant trained on company documents Huntsville
+- integrate AI into existing business software Alabama
+- practical AI automation for small businesses in North Alabama
 
 ---
 

@@ -46,7 +46,7 @@ function App() {
               Portfolio & Client Work
             </h2>
             <p className="text-center text-professional-silver mt-2 mb-4 text-lg">
-              Website Design, AI Automation & Development Projects for Alabama Businesses
+              Business AI Integration, Workflow Automation & Web Development
             </p>
             <ProjectComponent />
             <p className="m-4 text-lg">

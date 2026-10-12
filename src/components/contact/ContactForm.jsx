@@ -49,6 +49,9 @@ const ContactForm = () => {
             Get a Free Consultation
           </h2>
           <p className="text-center text-lg text-professional-silver mt-2 mb-4">
+            Tell me about a repetitive task, customer workflow, or business system you want to improve with AI.
+          </p>
+          <p className="text-center text-lg text-professional-silver mt-2 mb-4">
             Serving Arab, Huntsville, Birmingham & North Alabama
           </p>
           <form name="contact" method="post" onSubmit={handleSubmit}>
@@ -87,7 +90,7 @@ const ContactForm = () => {
             </p>
             <p>
               <textarea
-                placeholder="Message"
+                placeholder="What would you like to improve with AI or automation?"
                 name="message"
                 rows="10"
                 value={formData.message}
@@ -120,7 +123,7 @@ const ContactForm = () => {
                 </div>
               )}
               <button type="submit" className="px-4 py-2 border rounded-lg">
-                Contact Me
+                Discuss an AI or Web Project
               </button>
             </p>
           </form>

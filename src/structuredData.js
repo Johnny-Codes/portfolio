@@ -1,17 +1,13 @@
-// Add this script to your index.html head section for local business SEO
-// Schema.org structured data for local business and service area
-
 export const structuredData = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Paul Johns Web Development & AI Solutions",
-  "description": "Freelance website design, custom web development, and AI automation services for businesses in Arab, Huntsville, Birmingham, and North Alabama",
+  "name": "Paul Johns Business AI Integration & Web Development",
+  "description": "Practical AI integration and workflow automation for businesses in Arab, Huntsville, Birmingham, and North Alabama, including AI assistants, document workflows, customer inquiry tools, and connections to existing business systems.",
   "url": "https://pauljohns.dev",
   "telephone": "256-299-7002",
   "email": "johnspaulm@gmail.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Arab",
     "addressLocality": "Arab",
     "addressRegion": "AL",
     "postalCode": "35016",
@@ -66,25 +62,30 @@ export const structuredData = {
   ],
   "priceRange": "$$",
   "serviceType": [
+    "Business AI Integration",
+    "AI Workflow Automation",
+    "AI Assistant Development",
+    "AI Customer Support Integration",
+    "Document Processing Automation",
+    "Business Process Automation",
+    "Custom AI Application Development",
     "Website Design",
     "Web Development",
     "E-commerce Development",
-    "AI Integration",
-    "Business Automation",
-    "Agentic AI Solutions",
     "Custom Software Development"
   ],
   "knowsAbout": [
     "React",
     "Python",
     "Django",
-    "AI Automation",
-    "OpenAI GPT-4",
+    "Business AI Integration",
+    "Generative AI",
+    "AI Workflow Automation",
+    "OpenAI API",
+    "Anthropic API",
     "Web Design",
     "E-commerce",
-    "SEO",
-    "Agentic AI",
-    "AI Solutions",
+    "Business Process Automation"
   ],
   "sameAs": [
     "https://linkedin.com/in/pmjohns",
