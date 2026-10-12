@@ -152,7 +152,7 @@ const ContactForm = () => {
           </p>
           <p className="text-xl font-bold p-2">
             <a
-              href="https://www.youtube.com/@johnny-codes"
+              href="https://www.youtube.com/@johnnysmakerspace"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2"
