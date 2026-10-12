@@ -52,7 +52,7 @@ function App() {
             <p className="m-4 text-lg">
               Visit my{" "}
               <a
-                href="https://www.youtube.com/@johnny-codes"
+                href="https://www.youtube.com/@johnnysmakerspace"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:cursor-pointer hover:underline hover:text-professional-silver"

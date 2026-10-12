@@ -44,6 +44,15 @@ const projects = [
     website: "",
     github: "",
   },
+  {
+    id: 3,
+    title: "Homestead & Tech",
+    description:
+      "A personal project bringing together programming, gardening, and practical technology for homesteading. Homestead & Tech explores open-source smart-farm ideas, Raspberry Pi automation, and sustainable living in Alabama.",
+    technologies: [],
+    website: "https://homesteadandtech.com/",
+    youtube: "https://www.youtube.com/@homesteadandtech",
+  },
   // {
   //   id: 3,
   //   title: "AI-Powered Campaign Management System",
