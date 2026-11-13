@@ -24,7 +24,7 @@ const AboutMe = () => {
             <ul className="space-y-3 text-base">
               <li className="flex items-start gap-3 group">
                 <span className="text-professional-yellow mt-1 group-hover:scale-125 transition-transform">▸</span>
-                <span className="group-hover:text-white transition-colors">Custom responsive website design</span>
+                <span className="group-hover:text-white transition-colors">Custom-coded responsive websites (no WordPress)</span>
               </li>
               <li className="flex items-start gap-3 group">
                 <span className="text-professional-yellow mt-1 group-hover:scale-125 transition-transform">▸</span>
@@ -43,6 +43,12 @@ const AboutMe = () => {
                 <span className="group-hover:text-white transition-colors">SEO optimization for local search</span>
               </li>
             </ul>
+            <a
+              href="/websites/"
+              className="mt-5 inline-block font-semibold text-professional-yellow hover:text-professional-darkyellow hover:underline"
+            >
+              Small business website plans &amp; pricing →
+            </a>
           </div>
           
           {/* Column 2: Business AI Integration */}

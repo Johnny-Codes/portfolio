@@ -3,7 +3,6 @@ import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const htmlPath = path.join(root, 'dist', 'index.html')
 const serverDir = path.join(root, 'dist-ssr')
 const serverEntry = fs
   .readdirSync(serverDir)
@@ -11,25 +10,36 @@ const serverEntry = fs
 
 if (!serverEntry) throw new Error('SSR bundle not found in dist-ssr')
 
-const { render, structuredData } = await import(
+const { render, getStructuredData, pages } = await import(
   pathToFileURL(path.join(serverDir, serverEntry)).href
 )
 
-let html = fs.readFileSync(htmlPath, 'utf8')
+const ROOT_RE = /<div id="root"( data-page="([\w-]+)")?><\/div>/
 
-if (!html.includes('<div id="root"></div>')) {
-  throw new Error('Expected empty <div id="root"></div> in dist/index.html')
+for (const page of pages) {
+  const htmlPath = path.join(root, 'dist', page.html)
+  let html = fs.readFileSync(htmlPath, 'utf8')
+
+  const match = html.match(ROOT_RE)
+  if (!match) {
+    throw new Error(`Expected empty <div id="root"> in dist/${page.html}`)
+  }
+  const declaredPage = match[2] ?? 'home'
+  if (declaredPage !== page.id) {
+    throw new Error(`dist/${page.html} has data-page="${declaredPage}", expected "${page.id}"`)
+  }
+
+  const jsonLd = JSON.stringify(getStructuredData(page.id)).replace(/</g, '\\u003c')
+
+  html = html
+    .replace(ROOT_RE, (whole) => whole.replace('></div>', `>${render(page.id)}</div>`))
+    .replace(
+      '</head>',
+      () => `<script type="application/ld+json">${jsonLd}</script>\n  </head>`,
+    )
+
+  fs.writeFileSync(htmlPath, html)
+  console.log(`Prerendered dist/${page.html}`)
 }
 
-const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c')
-
-html = html
-  .replace('<div id="root"></div>', () => `<div id="root">${render()}</div>`)
-  .replace(
-    '</head>',
-    () => `<script type="application/ld+json">${jsonLd}</script>\n  </head>`,
-  )
-
-fs.writeFileSync(htmlPath, html)
 fs.rmSync(serverDir, { recursive: true, force: true })
-console.log('Prerendered dist/index.html')

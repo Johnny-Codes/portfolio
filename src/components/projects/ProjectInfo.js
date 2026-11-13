@@ -17,6 +17,35 @@ const projects = [
     alt: "What's Up Marshall County local events and business directory"
   },
   {
+    id: 4,
+    title: "BoltSnapBolt - Magic: The Gathering Hub",
+    status: "In Development",
+    description:
+      "A Magic: The Gathering site combining card search, a blog, deck building, and daily price history. Celery background jobs import card data and prices from Scryfall, and the deck builder enforces each format's rules, from deck size and copy limits to Commander color identity. A local LLM (Ollama) suggests how cards interact, code checks its claims against each card's exact stats, and players confirm or reject the results. The front end is server-rendered Next.js for SEO, with a Django and Wagtail CMS and API behind it. A CI/CD pipeline tests, builds, and deploys the Docker images.",
+    technologies: [
+      "python",
+      "django",
+      "wagtail",
+      "nextjs",
+      "react",
+      "typescript",
+      "tailwindcss",
+      "postgresql",
+      "celery",
+      "redis",
+      "ollama",
+      "docker",
+    ],
+  },
+  {
+    id: 5,
+    title: "Fluency Through Fables - Spanish Learning Platform",
+    status: "In Development",
+    description:
+      "A Spanish learning site built around graded short stories that progress from beginner to conversational, plus verb conjugation pages, CEFR-leveled vocabulary lessons from A1 to C2 with quizzes, and printable writing-practice sheets. Readers share answers to practice questions and correct each other in a community built to be safe for all ages, with content filters, flagging, and an admin moderation queue. Also includes an admin dashboard, reader-reported fixes for AI-generated content, an A/B-tested Stripe support link, and Chispa, a puppy mascot whose AI-drafted replies are reviewed before they're posted. It runs on Node.js with built-in SQLite and no third-party runtime packages, and has structured data and llms.txt for search and AI answer engines.",
+    technologies: ["nodejs", "sqlite", "ollama", "stripe", "docker"],
+  },
+  {
     id: 1,
     title: "IoT Digital Twin & Industrial Automation",
     description: "Advanced IoT network implementation utilizing ESP32 microcontrollers and Raspberry Pi devices to create a digital twin of manufacturing operations. Demonstrates expertise in hardware integration, data collection, and real-time monitoring systems applicable to business automation and Industry 4.0 solutions.",

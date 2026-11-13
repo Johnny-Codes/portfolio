@@ -4,9 +4,10 @@ import App from './App.jsx'
 import './index.css'
 
 const root = document.getElementById('root')
+const page = root.dataset.page || 'home'
 const app = (
   <React.StrictMode>
-    <App />
+    <App page={page} />
   </React.StrictMode>
 )
 

@@ -1,3 +1,5 @@
+import { plans } from "./websites/plans.js";
+
 export const structuredData = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
@@ -91,3 +93,45 @@ export const structuredData = {
     "https://linkedin.com/in/pmjohns",
   ]
 };
+
+export const websitesStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Small Business Website Design & Hosting",
+  "serviceType": "Website Design",
+  "url": "https://pauljohns.dev/websites/",
+  "description": "Websites for small and local businesses in North Alabama, designed, hosted and maintained for one monthly price.",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": structuredData.name,
+    "url": structuredData.url,
+    "telephone": structuredData.telephone,
+    "address": structuredData.address,
+  },
+  "areaServed": structuredData.areaServed,
+  "offers": plans.map((plan) => ({
+    "@type": "Offer",
+    "name": `${plan.name} Website Plan`,
+    "priceCurrency": "USD",
+    "price": plan.monthly,
+    "priceSpecification": [
+      {
+        "@type": "UnitPriceSpecification",
+        "name": "Monthly",
+        "price": plan.monthly,
+        "priceCurrency": "USD",
+        "unitCode": "MON",
+      },
+      {
+        "@type": "UnitPriceSpecification",
+        "name": "One-time setup",
+        "price": plan.setupFee,
+        "priceCurrency": "USD",
+      },
+    ],
+  })),
+};
+
+export function getStructuredData(page) {
+  return page === "websites" ? websitesStructuredData : structuredData;
+}

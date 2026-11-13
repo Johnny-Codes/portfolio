@@ -9,6 +9,13 @@ import {
   SiTailwindcss,
   SiGithub,
   SiAlpinedotjs,
+  SiNextdotjs,
+  SiTypescript,
+  SiWagtail,
+  SiCelery,
+  SiRedis,
+  SiNodedotjs,
+  SiSqlite,
 } from "react-icons/si";
 import { FaDigitalOcean, FaDocker, FaCcStripe } from "react-icons/fa";
 const techs = {
@@ -26,6 +33,14 @@ const techs = {
   docker: <FaDocker />,
   digitalocean: <FaDigitalOcean />,
   alpinejs: <SiAlpinedotjs />,
+  nextjs: <SiNextdotjs />,
+  typescript: <SiTypescript />,
+  wagtail: <SiWagtail />,
+  celery: <SiCelery />,
+  redis: <SiRedis />,
+  nodejs: <SiNodedotjs />,
+  sqlite: <SiSqlite />,
+  ollama: "Ollama",
 };
 
 const ProjectCard = (project) => {
@@ -41,7 +56,12 @@ const ProjectCard = (project) => {
   };
   return (
     <project-card key={pr.id} className="flex flex-col items-center">
-      <h3 className="text-3xl my-4 underline">{pr.title}</h3>
+      <h3 className="text-3xl my-4 underline text-center">{pr.title}</h3>
+      {pr.status && (
+        <span className="text-sm px-3 py-1 rounded-full border border-professional-yellow text-professional-yellow">
+          {pr.status}
+        </span>
+      )}
       <p className="py-4 text-2xl flex gap-2">
         {pr.technologies.map((tech) => {
           return (

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { FaYoutube } from "react-icons/fa";
+import { HONEYPOT_FIELD } from "../../forms/schemas";
+import { readForm, submitNetlifyForm } from "../../forms/netlify";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -20,22 +22,13 @@ const ContactForm = () => {
   };
 
   const handleSubmit = (event) => {
-    const encode = (data) => {
-      return Object.keys(data)
-        .map(
-          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&");
-    };
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formData }),
-    })
-      .then(() => setShowModal(true))
-      .catch((error) => alert(error));
     event.preventDefault();
+    submitNetlifyForm("contact", readForm(event.currentTarget))
+      .then(() => setShowModal(true))
+      .catch((error) => {
+        console.error(error);
+        alert("Sorry, something went wrong sending your message. Please email or call me directly.");
+      });
   };
 
   return (
@@ -54,8 +47,19 @@ const ContactForm = () => {
           <p className="text-center text-lg text-professional-silver mt-2 mb-4">
             Serving Arab, Huntsville, Birmingham & North Alabama
           </p>
-          <form name="contact" method="post" onSubmit={handleSubmit}>
-            <input type="hidden" name="contact" value="contact" />
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot={HONEYPOT_FIELD}
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p className="hidden" aria-hidden="true">
+              <label>
+                Leave this empty: <input name={HONEYPOT_FIELD} tabIndex={-1} autoComplete="off" />
+              </label>
+            </p>
             <p>
               <input
                 type="text"
